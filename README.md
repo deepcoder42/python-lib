@@ -40,7 +40,7 @@ cp requirements-python-lib.txt > {Other_Python_Project}/requirements-python-lib.
 Modify the {Other_Python_Project}/README.md file:
 
 ```
-   pip install -r requirements-python-lib.txt --target lib --system
+pip install -r requirements-python-lib.txt --target lib --system
 ```
 
 ##### Add the general python-lib requirements to the other program's requirements.txt file.  Remove any duplicates.
@@ -138,23 +138,7 @@ test/unit/machine/code_coverage.sh
 
 ### Installation:
 
-Install the project using git.
-  * Replace **{Python_Project}** with the baseline path of the python program.
-
-```
-cd {Python_Project}
-git clone git@github.com:deepcoder42/python-lib.git
-```
-
-Install/upgrade system modules.
-
-```
-cd python-lib
-sudo bash
-umask 022
-pip install -r requirements.txt --upgrade --system
-exit
-```
+Install the project using the procedures in the Installation section under Unit Testing.
 
 ### Testing:
 ```
